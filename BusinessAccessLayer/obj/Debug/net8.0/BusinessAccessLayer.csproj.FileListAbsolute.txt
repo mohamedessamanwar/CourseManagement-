@@ -13,3 +13,4 @@ C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\BusinessAcces
 C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\BusinessAccessLayer\obj\Debug\net8.0\refint\BusinessAccessLayer.dll
 C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\BusinessAccessLayer\obj\Debug\net8.0\BusinessAccessLayer.pdb
 C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\BusinessAccessLayer\obj\Debug\net8.0\ref\BusinessAccessLayer.dll
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\BusinessAccessLayer\obj\Debug\net8.0\BusinessAccessLayer.sourcelink.json
