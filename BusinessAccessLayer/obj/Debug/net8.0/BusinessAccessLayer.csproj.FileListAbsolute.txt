@@ -1,0 +1,15 @@
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\BusinessAccessLayer\obj\Debug\net8.0\BusinessAccessLayer.csproj.AssemblyReference.cache
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\BusinessAccessLayer\obj\Debug\net8.0\BusinessAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\BusinessAccessLayer\obj\Debug\net8.0\BusinessAccessLayer.AssemblyInfoInputs.cache
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\BusinessAccessLayer\obj\Debug\net8.0\BusinessAccessLayer.AssemblyInfo.cs
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\BusinessAccessLayer\obj\Debug\net8.0\BusinessAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\BusinessAccessLayer\bin\Debug\net8.0\BusinessAccessLayer.deps.json
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\BusinessAccessLayer\bin\Debug\net8.0\BusinessAccessLayer.dll
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\BusinessAccessLayer\bin\Debug\net8.0\BusinessAccessLayer.pdb
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\BusinessAccessLayer\bin\Debug\net8.0\DataAccessLayer.dll
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\BusinessAccessLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\BusinessAccessLayer\obj\Debug\net8.0\Business.395A7FC9.Up2Date
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\BusinessAccessLayer\obj\Debug\net8.0\BusinessAccessLayer.dll
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\BusinessAccessLayer\obj\Debug\net8.0\refint\BusinessAccessLayer.dll
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\BusinessAccessLayer\obj\Debug\net8.0\BusinessAccessLayer.pdb
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\BusinessAccessLayer\obj\Debug\net8.0\ref\BusinessAccessLayer.dll
