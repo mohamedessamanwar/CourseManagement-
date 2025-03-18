@@ -149,3 +149,4 @@ C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagem
 C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI\bin\Debug\net8.0\Serilog.Sinks.Console.dll
 C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI\bin\Debug\net8.0\Serilog.Sinks.File.dll
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI\obj\Debug\net8.0\CourseManagementAPI.sourcelink.json
