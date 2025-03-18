@@ -2,6 +2,7 @@ using BusinessAccessLayer;
 using BusinessAccessLayer.DTOS;
 using DataAccessLayer;
 using Microsoft.AspNetCore.Mvc;
+using Restaurant.Api.Middlewares;
 using Serilog;
 using Serilog.Events;
 namespace CourseManagementAPI
@@ -37,6 +38,7 @@ namespace CourseManagementAPI
                 config.WriteTo.Console();
                 config.WriteTo.File("Logs/CompanyLogs-20241220.log", rollingInterval: RollingInterval.Day, rollOnFileSizeLimit: true);
             });
+            builder.Services.AddTransient<ErrorHandleMiddleware>();
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
@@ -50,7 +52,7 @@ namespace CourseManagementAPI
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
+            app.UseMiddleware<ErrorHandleMiddleware>();
             app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseAuthorization();

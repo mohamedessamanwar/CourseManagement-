@@ -8,38 +8,38 @@ namespace DataAccessLayer.Repositories.GenericRepo
 {
     public class GenericRepo<T> : IGenericRepo<T> where T : class, BaseEntity
     {
-        protected readonly ApplicationDbContext restaurantContext;
+        protected readonly ApplicationDbContext dbContext;
         public GenericRepo(ApplicationDbContext context)
         {
-            this.restaurantContext = context;
+            this.dbContext = context;
         }
         public async Task<IEnumerable<T>> GetAll()
         {
-            return await restaurantContext.Set<T>().AsNoTracking().ToListAsync();
+            return await dbContext.Set<T>().AsNoTracking().ToListAsync();
         }
         public async Task<T?> GetByIdAsync(int id)
         {
-            return await restaurantContext.Set<T>().FirstOrDefaultAsync(e => EF.Property<int>(e, "Id") == id);
+            return await dbContext.Set<T>().FirstOrDefaultAsync(e => EF.Property<int>(e, "Id") == id);
         }
         public async Task<int> AddAsync(T entity)
         {
-            await restaurantContext.Set<T>().AddAsync(entity);
-            await restaurantContext.SaveChangesAsync();
+            await dbContext.Set<T>().AddAsync(entity);
+            // await dbContext.SaveChangesAsync();
             return entity.Id;
         }
 
         public void Update(T entity, params string[] properties)
         {
             // dbEntity is object entity . 
-            var dbEntity = restaurantContext.Set<T>().Local.FirstOrDefault(e => e.Id == entity.Id);
+            var dbEntity = dbContext.Set<T>().Local.FirstOrDefault(e => e.Id == entity.Id);
             EntityEntry entryEntry;
             if (dbEntity == null)
             {
-                entryEntry = restaurantContext.Set<T>().Attach(entity);  // Attach the entity to the context , the entity’s state will typically be Unchanged.
+                entryEntry = dbContext.Set<T>().Attach(entity);  // Attach the entity to the context , the entity’s state will typically be Unchanged.
             }
             else
             {
-                entryEntry = restaurantContext.ChangeTracker.Entries<T>().Where
+                entryEntry = dbContext.ChangeTracker.Entries<T>().Where
                     (e => e.Entity.Id == entity.Id).FirstOrDefault();
             }
 
@@ -56,17 +56,17 @@ namespace DataAccessLayer.Repositories.GenericRepo
 
         public void Delete(T entity)
         {
-            restaurantContext.Set<T>().Remove(entity);
+            dbContext.Set<T>().Remove(entity);
 
         }
         public void DeleteBulk(IEnumerable<T> entities)
         {
-            restaurantContext.Set<T>().RemoveRange(entities);
+            dbContext.Set<T>().RemoveRange(entities);
         }
 
         public async Task<int> Complete()
         {
-            return await restaurantContext.SaveChangesAsync();
+            return await dbContext.SaveChangesAsync();
         }
     }
 }

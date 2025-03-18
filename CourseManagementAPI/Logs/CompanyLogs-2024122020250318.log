@@ -201,3 +201,9 @@ VALUES (N'20250318184854_add payment status', N'8.0.0');
 2025-03-18 21:42:11.274 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_vs/browserLink - 200 null text/javascript; charset=UTF-8 131.8542ms
 2025-03-18 21:42:12.013 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - null null
 2025-03-18 21:42:12.312 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 298.9753ms
+2025-03-18 22:55:56.307 +02:00 [INF] User profile is available. Using 'C:\Users\AL-FAJR\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-18 22:55:56.744 +02:00 [INF] Now listening on: https://localhost:7245
+2025-03-18 22:55:56.746 +02:00 [INF] Now listening on: http://localhost:5236
+2025-03-18 22:55:56.751 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-18 22:55:56.753 +02:00 [INF] Hosting environment: Development
+2025-03-18 22:55:56.754 +02:00 [INF] Content root path: C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI
