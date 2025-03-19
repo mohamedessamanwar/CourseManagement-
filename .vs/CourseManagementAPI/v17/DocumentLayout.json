@@ -1,40 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{D1A32451-0FEE-4446-98B7-53AA743D346F}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\course management api\\coursemanagementapi\\businessaccesslayer\\services\\trainerservice\\trainerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1A32451-0FEE-4446-98B7-53AA743D346F}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\services\\trainerservice\\trainerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F49141B4-21F1-4671-A9A5-002E1E0429B6}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\course management api\\coursemanagementapi\\dataaccesslayer\\repositories\\genericrepo\\genericrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F49141B4-21F1-4671-A9A5-002E1E0429B6}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\genericrepo\\genericrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F49141B4-21F1-4671-A9A5-002E1E0429B6}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\course management api\\coursemanagementapi\\dataaccesslayer\\repositories\\trainerrepo\\trainerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F49141B4-21F1-4671-A9A5-002E1E0429B6}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\trainerrepo\\trainerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED130953-8D86-4B07-A5FE-746830E906D6}|CourseManagementAPI\\CourseManagementAPI.csproj|c:\\users\\al-fajr\\desktop\\course management api\\coursemanagementapi\\coursemanagementapi\\controllers\\trainercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED130953-8D86-4B07-A5FE-746830E906D6}|CourseManagementAPI\\CourseManagementAPI.csproj|solutionrelative:coursemanagementapi\\controllers\\trainercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED130953-8D86-4B07-A5FE-746830E906D6}|CourseManagementAPI\\CourseManagementAPI.csproj|c:\\users\\al-fajr\\desktop\\course management api\\coursemanagementapi\\coursemanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED130953-8D86-4B07-A5FE-746830E906D6}|CourseManagementAPI\\CourseManagementAPI.csproj|solutionrelative:coursemanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F49141B4-21F1-4671-A9A5-002E1E0429B6}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\course management api\\coursemanagementapi\\dataaccesslayer\\data\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F49141B4-21F1-4671-A9A5-002E1E0429B6}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\data\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1A32451-0FEE-4446-98B7-53AA743D346F}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\course management api\\coursemanagementapi\\businessaccesslayer\\businessaccesslayerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1A32451-0FEE-4446-98B7-53AA743D346F}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\businessaccesslayerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1A32451-0FEE-4446-98B7-53AA743D346F}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\course management api\\coursemanagementapi\\businessaccesslayer\\dtos\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1A32451-0FEE-4446-98B7-53AA743D346F}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\dtos\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -42,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,110 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\CourseManagementAPI\\Program.cs",
-              "RelativeDocumentMoniker": "CourseManagementAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\CourseManagementAPI\\Program.cs",
-              "RelativeToolTip": "CourseManagementAPI\\Program.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAzwAwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T22:24:43.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TrainerController.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\CourseManagementAPI\\Controllers\\TrainerController.cs",
-              "RelativeDocumentMoniker": "CourseManagementAPI\\Controllers\\TrainerController.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\CourseManagementAPI\\Controllers\\TrainerController.cs",
-              "RelativeToolTip": "CourseManagementAPI\\Controllers\\TrainerController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAABQAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T22:16:22.94Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GenericRepo.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\DataAccessLayer\\Repositories\\GenericRepo\\GenericRepo.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\GenericRepo\\GenericRepo.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\DataAccessLayer\\Repositories\\GenericRepo\\GenericRepo.cs",
-              "RelativeToolTip": "DataAccessLayer\\Repositories\\GenericRepo\\GenericRepo.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAIA6wBoAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T20:08:32.159Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TrainerRepo.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\DataAccessLayer\\Repositories\\TrainerRepo\\TrainerRepo.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\TrainerRepo\\TrainerRepo.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\DataAccessLayer\\Repositories\\TrainerRepo\\TrainerRepo.cs",
-              "RelativeToolTip": "DataAccessLayer\\Repositories\\TrainerRepo\\TrainerRepo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T20:08:28.231Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Trainer.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\DataAccessLayer\\Data\\Models\\Trainer.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Data\\Models\\Trainer.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\DataAccessLayer\\Data\\Models\\Trainer.cs",
-              "RelativeToolTip": "DataAccessLayer\\Data\\Models\\Trainer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T20:04:41.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TrainerService.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\BusinessAccessLayer\\Services\\TrainerService\\TrainerService.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\Services\\TrainerService\\TrainerService.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\BusinessAccessLayer\\Services\\TrainerService\\TrainerService.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\Services\\TrainerService\\TrainerService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T20:02:15.853Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BusinessAccessLayerServices.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\BusinessAccessLayer\\BusinessAccessLayerServices.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\BusinessAccessLayerServices.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\BusinessAccessLayer\\BusinessAccessLayerServices.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\BusinessAccessLayerServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T22:22:10.656Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Response.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\BusinessAccessLayer\\DTOS\\Response.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\DTOS\\Response.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\BusinessAccessLayer\\DTOS\\Response.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\DTOS\\Response.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBEAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T22:15:22.224Z",
-              "EditorCaption": ""
             }
           ]
         }

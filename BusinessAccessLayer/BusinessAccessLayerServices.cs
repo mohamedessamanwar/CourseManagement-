@@ -1,5 +1,6 @@
 ﻿using BusinessAccessLayer.DTOS.AuthDtos;
 using BusinessAccessLayer.Services.AuthService;
+using BusinessAccessLayer.Services.CourseService;
 using BusinessAccessLayer.Services.Email;
 using BusinessAccessLayer.Services.TrainerService;
 using DataAccessLayer.Data;
@@ -46,6 +47,8 @@ namespace BusinessAccessLayer
              });
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<ITrainerService, TrainerService>();
+            services.AddScoped<ICourseService, CourseService>();
+
 
             return services;
 
