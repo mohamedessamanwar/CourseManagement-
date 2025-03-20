@@ -15,7 +15,18 @@ namespace Restaurant.Api.Middlewares
 
                 await next.Invoke(context);
             }
-            catch (NotFountException ex)
+            catch (NotFoundException ex)
+            {
+                var res = new Response<string>(ex.Message, false, "faild");
+
+                context.Response.StatusCode = 404;
+                context.Response.ContentType = "application/json"; // Set the content type to JSON
+
+                // Serialize the response object to JSON and write it to the response
+                await context.Response.WriteAsync(System.Text.Json.JsonSerializer.Serialize(res));
+
+            }
+            catch (BadRequstExeption ex)
             {
                 var res = new Response<string>(ex.Message, false, "faild");
 

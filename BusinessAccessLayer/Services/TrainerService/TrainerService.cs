@@ -31,7 +31,7 @@ namespace BusinessAccessLayer.Services.TrainerService
         {
             var Trainer = await trainerRepo.GetByIdAsync(id);
             if (Trainer == null)
-                throw new NotFountException("Trainer is Not Found");
+                throw new NotFoundException("Trainer is Not Found");
             Trainer.PhoneNumber = createTrainerDto.PhoneNumber;
             Trainer.FullName = createTrainerDto.FullName;
             Trainer.Email = createTrainerDto.Email;
@@ -43,7 +43,7 @@ namespace BusinessAccessLayer.Services.TrainerService
         {
             var trainer = await trainerRepo.GetByIdAsync(id);
             if (trainer == null)
-                throw new NotFountException("Trainer is Not Found");
+                throw new NotFoundException("Trainer is Not Found");
 
             trainerRepo.Delete(trainer);
             var isSaved = await trainerRepo.Complete() > 0;
@@ -53,7 +53,7 @@ namespace BusinessAccessLayer.Services.TrainerService
         {
             var trainer = await trainerRepo.GetByIdAsync(id);
             if (trainer == null)
-                throw new NotFountException("Trainer is Not Found");
+                throw new NotFoundException("Trainer is Not Found");
             return new TrainerViewDto()
             {
                 Id = trainer.Id,

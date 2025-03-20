@@ -1,6 +1,7 @@
 ﻿using DataAccessLayer.Data;
 using DataAccessLayer.Data.Models;
 using DataAccessLayer.Repositories.GenericRepo;
+using Microsoft.EntityFrameworkCore;
 
 namespace DataAccessLayer.Repositories.PaymentRepo
 {
@@ -8,6 +9,13 @@ namespace DataAccessLayer.Repositories.PaymentRepo
     {
         public PaymentRepo(ApplicationDbContext context) : base(context)
         {
+
+        }
+        public async Task<Payment?> GetLastPayment(int TrainerId, int CourseId)
+        {
+            return await dbContext.Payments.AsNoTracking()
+                 .Where(predicate: c => c.TrainerId == TrainerId && c.CourseId == CourseId)
+                 .OrderByDescending(e => e.CreatedAt).FirstOrDefaultAsync();
         }
     }
 }

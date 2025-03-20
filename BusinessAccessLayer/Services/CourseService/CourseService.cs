@@ -31,7 +31,7 @@ namespace BusinessAccessLayer.Services.CourseService
         {
             var course = await courseRepo.GetByIdAsync(id);
             if (course == null)
-                throw new NotFountException("Course not found");
+                throw new NotFoundException("Course not found");
 
             course.Title = createCourseDto.Title;
             course.Description = createCourseDto.Description;
@@ -47,7 +47,7 @@ namespace BusinessAccessLayer.Services.CourseService
         {
             var course = await courseRepo.GetByIdAsync(id);
             if (course == null)
-                throw new NotFountException("Course not found");
+                throw new NotFoundException("Course not found");
 
             courseRepo.Delete(course);
             var isSaved = await courseRepo.Complete() > 0;
@@ -58,7 +58,7 @@ namespace BusinessAccessLayer.Services.CourseService
         {
             var course = await courseRepo.GetByIdAsync(id);
             if (course == null)
-                throw new NotFountException("Course not found");
+                throw new NotFoundException("Course not found");
 
             return new ViewCourseDto()
             {

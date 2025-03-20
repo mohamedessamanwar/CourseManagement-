@@ -2,6 +2,8 @@
 using BusinessAccessLayer.Services.AuthService;
 using BusinessAccessLayer.Services.CourseService;
 using BusinessAccessLayer.Services.Email;
+using BusinessAccessLayer.Services.PaymentServise;
+using BusinessAccessLayer.Services.TrainerCourseService;
 using BusinessAccessLayer.Services.TrainerService;
 using DataAccessLayer.Data;
 using DataAccessLayer.Data.Models;
@@ -48,6 +50,9 @@ namespace BusinessAccessLayer
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<ITrainerService, TrainerService>();
             services.AddScoped<ICourseService, CourseService>();
+            services.AddScoped<ITrainerCourseService, TrainerCourseService>();
+            services.AddScoped<IPaymentService, PaymentServise>();
+
 
 
             return services;
