@@ -1,48 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{ED130953-8D86-4B07-A5FE-746830E906D6}|CourseManagementAPI\\CourseManagementAPI.csproj|c:\\users\\al-fajr\\desktop\\course management api\\coursemanagementapi\\coursemanagementapi\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED130953-8D86-4B07-A5FE-746830E906D6}|CourseManagementAPI\\CourseManagementAPI.csproj|solutionrelative:coursemanagementapi\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1A32451-0FEE-4446-98B7-53AA743D346F}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\course management api\\coursemanagementapi\\businessaccesslayer\\services\\cacheservice\\cacheservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1A32451-0FEE-4446-98B7-53AA743D346F}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\services\\cacheservice\\cacheservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1A32451-0FEE-4446-98B7-53AA743D346F}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\course management api\\coursemanagementapi\\businessaccesslayer\\businessaccesslayerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1A32451-0FEE-4446-98B7-53AA743D346F}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\businessaccesslayerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1A32451-0FEE-4446-98B7-53AA743D346F}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\course management api\\coursemanagementapi\\businessaccesslayer\\services\\trainerservice\\trainerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1A32451-0FEE-4446-98B7-53AA743D346F}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\services\\trainerservice\\trainerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A3F5510-42AD-44D1-9453-E7D0C29C3902}|TestProject\\TestProject.csproj|c:\\users\\al-fajr\\desktop\\course management api\\coursemanagementapi\\testproject\\courseservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A3F5510-42AD-44D1-9453-E7D0C29C3902}|TestProject\\TestProject.csproj|solutionrelative:testproject\\courseservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A3F5510-42AD-44D1-9453-E7D0C29C3902}|TestProject\\TestProject.csproj|c:\\users\\al-fajr\\desktop\\course management api\\coursemanagementapi\\testproject\\trainerservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A3F5510-42AD-44D1-9453-E7D0C29C3902}|TestProject\\TestProject.csproj|solutionrelative:testproject\\trainerservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A3F5510-42AD-44D1-9453-E7D0C29C3902}|TestProject\\TestProject.csproj|c:\\users\\al-fajr\\desktop\\course management api\\coursemanagementapi\\testproject\\paymentservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A3F5510-42AD-44D1-9453-E7D0C29C3902}|TestProject\\TestProject.csproj|solutionrelative:testproject\\paymentservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1A32451-0FEE-4446-98B7-53AA743D346F}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\course management api\\coursemanagementapi\\businessaccesslayer\\services\\paymentservise\\paymentservise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1A32451-0FEE-4446-98B7-53AA743D346F}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\services\\paymentservise\\paymentservise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A3F5510-42AD-44D1-9453-E7D0C29C3902}|TestProject\\TestProject.csproj|c:\\users\\al-fajr\\desktop\\course management api\\coursemanagementapi\\testproject\\trainercourseservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A3F5510-42AD-44D1-9453-E7D0C29C3902}|TestProject\\TestProject.csproj|solutionrelative:testproject\\trainercourseservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1A32451-0FEE-4446-98B7-53AA743D346F}|BusinessAccessLayer\\BusinessAccessLayer.csproj|c:\\users\\al-fajr\\desktop\\course management api\\coursemanagementapi\\businessaccesslayer\\services\\trainercourseservice\\trainercourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1A32451-0FEE-4446-98B7-53AA743D346F}|BusinessAccessLayer\\BusinessAccessLayer.csproj|solutionrelative:businessaccesslayer\\services\\trainercourseservice\\trainercourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -50,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -59,136 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CourseController.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\CourseManagementAPI\\Controllers\\CourseController.cs",
-              "RelativeDocumentMoniker": "CourseManagementAPI\\Controllers\\CourseController.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\CourseManagementAPI\\Controllers\\CourseController.cs",
-              "RelativeToolTip": "CourseManagementAPI\\Controllers\\CourseController.cs",
-              "ViewState": "AQIAAHQAAAAAAAAAAAAuwIAAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T22:04:10.394Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CacheService .cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\BusinessAccessLayer\\Services\\CacheService\\CacheService .cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\Services\\CacheService\\CacheService .cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\BusinessAccessLayer\\Services\\CacheService\\CacheService .cs",
-              "RelativeToolTip": "BusinessAccessLayer\\Services\\CacheService\\CacheService .cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAmwBcAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T22:01:36.284Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BusinessAccessLayerServices.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\BusinessAccessLayer\\BusinessAccessLayerServices.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\BusinessAccessLayerServices.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\BusinessAccessLayer\\BusinessAccessLayerServices.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\BusinessAccessLayerServices.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAAABkAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T22:01:26.812Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CourseServiceTests.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\TestProject\\CourseServiceTests.cs",
-              "RelativeDocumentMoniker": "TestProject\\CourseServiceTests.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\TestProject\\CourseServiceTests.cs",
-              "RelativeToolTip": "TestProject\\CourseServiceTests.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAowDwAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T22:00:18.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TrainerServiceTests.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\TestProject\\TrainerServiceTests.cs",
-              "RelativeDocumentMoniker": "TestProject\\TrainerServiceTests.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\TestProject\\TrainerServiceTests.cs",
-              "RelativeToolTip": "TestProject\\TrainerServiceTests.cs",
-              "ViewState": "AQIAAFUAAAAAAAAAAAAkwGUAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T21:55:17.471Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TrainerService.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\BusinessAccessLayer\\Services\\TrainerService\\TrainerService.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\Services\\TrainerService\\TrainerService.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\BusinessAccessLayer\\Services\\TrainerService\\TrainerService.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\Services\\TrainerService\\TrainerService.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwE0AAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T21:46:21.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PaymentServiceTests.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\TestProject\\PaymentServiceTests.cs",
-              "RelativeDocumentMoniker": "TestProject\\PaymentServiceTests.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\TestProject\\PaymentServiceTests.cs",
-              "RelativeToolTip": "TestProject\\PaymentServiceTests.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAqwEsAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T21:45:30.7Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PaymentServise.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\BusinessAccessLayer\\Services\\PaymentServise\\PaymentServise.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\Services\\PaymentServise\\PaymentServise.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\BusinessAccessLayer\\Services\\PaymentServise\\PaymentServise.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\Services\\PaymentServise\\PaymentServise.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAADwv18AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T21:44:34.87Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TrainerCourseServiceTests.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\TestProject\\TrainerCourseServiceTests.cs",
-              "RelativeDocumentMoniker": "TestProject\\TrainerCourseServiceTests.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\TestProject\\TrainerCourseServiceTests.cs",
-              "RelativeToolTip": "TestProject\\TrainerCourseServiceTests.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAkwFsAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T21:43:05.836Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TrainerCourseService.cs",
-              "DocumentMoniker": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\BusinessAccessLayer\\Services\\TrainerCourseService\\TrainerCourseService.cs",
-              "RelativeDocumentMoniker": "BusinessAccessLayer\\Services\\TrainerCourseService\\TrainerCourseService.cs",
-              "ToolTip": "C:\\Users\\AL-FAJR\\Desktop\\Course Management API\\CourseManagementAPI\\BusinessAccessLayer\\Services\\TrainerCourseService\\TrainerCourseService.cs",
-              "RelativeToolTip": "BusinessAccessLayer\\Services\\TrainerCourseService\\TrainerCourseService.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAswIUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T21:42:20.055Z",
-              "EditorCaption": ""
             }
           ]
         }
