@@ -1,5 +1,4 @@
-﻿
-
+﻿using BusinessAccessLayer.DTOS.PaymentDtos;
 using BusinessAccessLayer.DTOS.TrainerCourseDtos;
 using BusinessAccessLayer.Exceptions;
 using DataAccessLayer.Data.Models;
@@ -77,6 +76,20 @@ namespace BusinessAccessLayer.Services.PaymentServise
             if (trainerCource == null)
                 throw new BadRequstExeption("Trainer Is Not Have Course");
             return course;
+        }
+        public async Task<IEnumerable<TrainerPaymentsDto>> GetTrainerPayments(int trainerId, int courseId)
+        {
+            var result = await paymentRepo.GetTrainerPayments(trainerId, courseId);
+            return result.Select(e => new TrainerPaymentsDto()
+            {
+                Id = e.Id,
+                PaymentStatusForCourse = e.PaymentStatusForCourse,
+                TrainerId = e.TrainerId,
+                CourseId = e.CourseId,
+                RemainingAmount = e.RemainingAmount,
+                Amount = e.Amount,
+                CreatedAt = e.CreatedAt,
+            }).ToList();
         }
     }
 }

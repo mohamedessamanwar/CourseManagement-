@@ -17,5 +17,11 @@ namespace DataAccessLayer.Repositories.PaymentRepo
                  .Where(predicate: c => c.TrainerId == TrainerId && c.CourseId == CourseId)
                  .OrderByDescending(e => e.CreatedAt).FirstOrDefaultAsync();
         }
+        public async Task<IEnumerable<Payment>> GetTrainerPayments(int trainerId, int courseId)
+        {
+            return await dbContext.Payments.AsNoTracking()
+                     .Where(predicate: c => c.TrainerId == trainerId && c.CourseId == courseId)
+                 .ToListAsync();
+        }
     }
 }

@@ -139,7 +139,6 @@ C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagem
 C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI\bin\Debug\net8.0\BusinessAccessLayer.dll
 C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI\bin\Debug\net8.0\BusinessAccessLayer.pdb
-C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI\obj\Debug\net8.0\CourseManagementAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI\bin\Debug\net8.0\Serilog.dll
 C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI\bin\Debug\net8.0\Serilog.AspNetCore.dll
 C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
@@ -150,3 +149,10 @@ C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagem
 C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI\bin\Debug\net8.0\Serilog.Sinks.File.dll
 C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI\obj\Debug\net8.0\CourseManagementAPI.sourcelink.json
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI\bin\Debug\net8.0\iTextSharp.LGPLv2.Core.dll
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI\bin\Debug\net8.0\SkiaSharp.dll
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI\bin\Debug\net8.0\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI\bin\Debug\net8.0\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI\bin\Debug\net8.0\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI\bin\Debug\net8.0\runtimes\win-x86\native\libSkiaSharp.dll

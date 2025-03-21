@@ -1,4 +1,6 @@
-﻿using BusinessAccessLayer.DTOS.TrainerCourseDtos;
+﻿using BusinessAccessLayer.DTOS;
+using BusinessAccessLayer.DTOS.PaymentDtos;
+using BusinessAccessLayer.DTOS.TrainerCourseDtos;
 using BusinessAccessLayer.Services.PaymentServise;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,7 +17,7 @@ namespace CourseManagementAPI.Controllers
             _paymentService = paymentService;
         }
 
-        [HttpPost("add")]
+        [HttpPost]
         public async Task<IActionResult> AddPayment([FromBody] AddCourseToTrainerDto courseTrainerDto)
         {
             var result = await _paymentService.AddPaymentToCourse(courseTrainerDto);
@@ -25,5 +27,13 @@ namespace CourseManagementAPI.Controllers
 
             return Ok(new { message = "payment successfully added." });
         }
+        [HttpGet]
+        [EndpointName("GetTrainerPayments")]
+        public async Task<IActionResult> GetTrainerPayments([FromQuery] int trainerId, [FromQuery] int courseId)
+        {
+            var result = await _paymentService.GetTrainerPayments(trainerId, courseId);
+            return Ok(new Response<IEnumerable<TrainerPaymentsDto>>(result, true));
+        }
+
     }
 }

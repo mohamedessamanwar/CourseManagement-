@@ -1,0 +1,282 @@
+2025-03-22 00:03:23.973 +02:00 [INF] User profile is available. Using 'C:\Users\AL-FAJR\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-22 00:03:24.500 +02:00 [INF] Now listening on: https://localhost:7245
+2025-03-22 00:03:24.502 +02:00 [INF] Now listening on: http://localhost:5236
+2025-03-22 00:03:24.507 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-22 00:03:24.509 +02:00 [INF] Hosting environment: Development
+2025-03-22 00:03:24.517 +02:00 [INF] Content root path: C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI
+2025-03-22 00:03:25.379 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/index.html - null null
+2025-03-22 00:03:25.884 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/index.html - 200 null text/html;charset=utf-8 512.8499ms
+2025-03-22 00:03:25.948 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_vs/browserLink - null null
+2025-03-22 00:03:25.952 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-22 00:03:25.974 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 15.9687ms
+2025-03-22 00:03:26.076 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_vs/browserLink - 200 null text/javascript; charset=UTF-8 127.565ms
+2025-03-22 00:03:26.956 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - null null
+2025-03-22 00:03:27.195 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 238.1185ms
+2025-03-22 00:06:51.219 +02:00 [INF] User profile is available. Using 'C:\Users\AL-FAJR\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-22 00:06:51.572 +02:00 [INF] Now listening on: https://localhost:7245
+2025-03-22 00:06:51.573 +02:00 [INF] Now listening on: http://localhost:5236
+2025-03-22 00:06:51.576 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-22 00:06:51.577 +02:00 [INF] Hosting environment: Development
+2025-03-22 00:06:51.579 +02:00 [INF] Content root path: C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI
+2025-03-22 00:06:52.297 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/index.html - null null
+2025-03-22 00:06:52.788 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/index.html - 200 null text/html;charset=utf-8 501.8799ms
+2025-03-22 00:06:52.859 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_vs/browserLink - null null
+2025-03-22 00:06:52.860 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-22 00:06:52.933 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 32.5302ms
+2025-03-22 00:06:52.990 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_vs/browserLink - 200 null text/javascript; charset=UTF-8 130.8699ms
+2025-03-22 00:06:53.616 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - null null
+2025-03-22 00:06:53.858 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 242.1515ms
+2025-03-22 00:06:58.615 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/Course - null null
+2025-03-22 00:06:58.712 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-03-22 00:06:58.718 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-03-22 00:06:58.720 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/Course - 401 0 null 104.955ms
+2025-03-22 00:07:12.778 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7245/api/Course - null null
+2025-03-22 00:07:12.787 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-03-22 00:07:12.789 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-03-22 00:07:12.799 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7245/api/Course - 401 0 null 20.7478ms
+2025-03-22 00:07:56.057 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7245/api/Auth/Login - application/json 80
+2025-03-22 00:07:56.076 +02:00 [INF] Executing endpoint 'CourseManagementAPI.Controllers.AuthController.Login (CourseManagementAPI)'
+2025-03-22 00:07:56.113 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BusinessAccessLayer.DTOS.AuthDtos.LoginDto) on controller CourseManagementAPI.Controllers.AuthController (CourseManagementAPI).
+2025-03-22 00:07:56.315 +02:00 [INF] Login request received for email: mohamed.essam.anwar2001@gmail.com
+2025-03-22 00:07:56.952 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Course'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-03-22 00:07:56.955 +02:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Payment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-03-22 00:07:56.957 +02:00 [WRN] No store type was specified for the decimal property 'RemainingAmount' on entity type 'Payment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-03-22 00:07:57.773 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-03-22 00:07:58.055 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-03-22 00:07:58.099 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-03-22 00:07:58.114 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-03-22 00:07:58.141 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-03-22 00:07:58.163 +02:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-03-22 00:07:58.173 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-03-22 00:07:58.179 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-03-22 00:07:58.215 +02:00 [INF] User logged in successfully: mohamed.essam.anwar2001@gmail.com
+2025-03-22 00:07:58.224 +02:00 [INF] Executing OkObjectResult, writing value of type 'BusinessAccessLayer.DTOS.Response`1[[BusinessAccessLayer.DTOS.AuthDtos.AuthModel, BusinessAccessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-22 00:07:58.246 +02:00 [INF] Executed action CourseManagementAPI.Controllers.AuthController.Login (CourseManagementAPI) in 2125.4697ms
+2025-03-22 00:07:58.249 +02:00 [INF] Executed endpoint 'CourseManagementAPI.Controllers.AuthController.Login (CourseManagementAPI)'
+2025-03-22 00:07:58.258 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7245/api/Auth/Login - 200 null application/json; charset=utf-8 2202.2999ms
+2025-03-22 00:08:19.233 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7245/api/Course - null null
+2025-03-22 00:08:19.271 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'XcMTMy9gcr-0QTQAB5_5zdyDvvwDql55YXR70cYPjKE'. , KeyId: 
+'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-03-22 00:08:19.305 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10517: Signature validation failed. The token's kid is missing. Keys tried: 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey, KeyId: '', InternalId: 'XcMTMy9gcr-0QTQAB5_5zdyDvvwDql55YXR70cYPjKE'. , KeyId: 
+'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-03-22 00:08:19.308 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-03-22 00:08:19.310 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-03-22 00:08:19.311 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7245/api/Course - 401 0 null 78.0854ms
+2025-03-22 00:08:32.491 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7245/api/Course - null null
+2025-03-22 00:08:32.520 +02:00 [INF] Executing endpoint 'CourseManagementAPI.Controllers.CourseController.GetAllCourses (CourseManagementAPI)'
+2025-03-22 00:08:32.526 +02:00 [INF] Route matched with {action = "GetAllCourses", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourses() on controller CourseManagementAPI.Controllers.CourseController (CourseManagementAPI).
+2025-03-22 00:08:32.532 +02:00 [INF] Fetching all courses.
+2025-03-22 00:08:32.608 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Price], [c].[Title], [c].[UpdatedAt]
+FROM [Courses] AS [c]
+2025-03-22 00:08:32.617 +02:00 [INF] Fetched 2 courses.
+2025-03-22 00:08:32.619 +02:00 [INF] Executing OkObjectResult, writing value of type 'BusinessAccessLayer.DTOS.Response`1[[System.Collections.Generic.IEnumerable`1[[BusinessAccessLayer.DTOS.CourceDtos.ViewCourseDto, BusinessAccessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-22 00:08:32.635 +02:00 [INF] Executed action CourseManagementAPI.Controllers.CourseController.GetAllCourses (CourseManagementAPI) in 106.331ms
+2025-03-22 00:08:32.644 +02:00 [INF] Executed endpoint 'CourseManagementAPI.Controllers.CourseController.GetAllCourses (CourseManagementAPI)'
+2025-03-22 00:08:32.648 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7245/api/Course - 200 null application/json; charset=utf-8 157.1869ms
+2025-03-22 00:08:48.864 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7245/api/Course - null null
+2025-03-22 00:08:48.868 +02:00 [INF] Executing endpoint 'CourseManagementAPI.Controllers.CourseController.GetAllCourses (CourseManagementAPI)'
+2025-03-22 00:08:48.870 +02:00 [INF] Route matched with {action = "GetAllCourses", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourses() on controller CourseManagementAPI.Controllers.CourseController (CourseManagementAPI).
+2025-03-22 00:08:51.949 +02:00 [INF] Fetching all courses.
+2025-03-22 00:08:57.224 +02:00 [INF] Courses fetched from cache.
+2025-03-22 00:09:00.713 +02:00 [INF] Executing OkObjectResult, writing value of type 'BusinessAccessLayer.DTOS.Response`1[[System.Collections.Generic.IEnumerable`1[[BusinessAccessLayer.DTOS.CourceDtos.ViewCourseDto, BusinessAccessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-22 00:09:00.756 +02:00 [INF] Executed action CourseManagementAPI.Controllers.CourseController.GetAllCourses (CourseManagementAPI) in 11883.2184ms
+2025-03-22 00:09:00.758 +02:00 [INF] Executed endpoint 'CourseManagementAPI.Controllers.CourseController.GetAllCourses (CourseManagementAPI)'
+2025-03-22 00:09:03.252 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7245/api/Course - 200 null application/json; charset=utf-8 14387.9194ms
+2025-03-22 00:10:34.605 +02:00 [INF] User profile is available. Using 'C:\Users\AL-FAJR\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-22 00:10:35.214 +02:00 [INF] Now listening on: https://localhost:7245
+2025-03-22 00:10:35.216 +02:00 [INF] Now listening on: http://localhost:5236
+2025-03-22 00:10:35.220 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-22 00:10:35.221 +02:00 [INF] Hosting environment: Development
+2025-03-22 00:10:35.222 +02:00 [INF] Content root path: C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI
+2025-03-22 00:10:36.005 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/index.html - null null
+2025-03-22 00:10:36.377 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/index.html - 200 null text/html;charset=utf-8 379.8888ms
+2025-03-22 00:10:36.436 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-22 00:10:36.439 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_vs/browserLink - null null
+2025-03-22 00:10:36.473 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 29.2175ms
+2025-03-22 00:10:36.550 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_vs/browserLink - 200 null text/javascript; charset=UTF-8 111.0402ms
+2025-03-22 00:10:37.274 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - null null
+2025-03-22 00:10:37.530 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 256.3795ms
+2025-03-22 00:11:09.709 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/TrainerCourse/3 - null null
+2025-03-22 00:11:09.793 +02:00 [INF] Executing endpoint 'CourseManagementAPI.Controllers.TrainerCourseController.GetCourseToTrainer (CourseManagementAPI)'
+2025-03-22 00:11:09.822 +02:00 [INF] Route matched with {action = "GetCourseToTrainer", controller = "TrainerCourse"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCourseToTrainer(Int32) on controller CourseManagementAPI.Controllers.TrainerCourseController (CourseManagementAPI).
+2025-03-22 00:11:10.597 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Course'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-03-22 00:11:10.600 +02:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Payment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-03-22 00:11:10.603 +02:00 [WRN] No store type was specified for the decimal property 'RemainingAmount' on entity type 'Payment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-03-22 00:11:11.454 +02:00 [INF] Executed DbCommand (57ms) [Parameters=[@__trainerId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CourseId], [c].[TrainerId], [c0].[Id], [c0].[CreatedAt], [c0].[Description], [c0].[Price], [c0].[Title], [c0].[UpdatedAt]
+FROM [CourseTrainers] AS [c]
+INNER JOIN [Courses] AS [c0] ON [c].[CourseId] = [c0].[Id]
+WHERE [c].[TrainerId] = @__trainerId_0
+2025-03-22 00:11:11.492 +02:00 [INF] Executing OkObjectResult, writing value of type 'BusinessAccessLayer.DTOS.Response`1[[System.Collections.Generic.IEnumerable`1[[BusinessAccessLayer.DTOS.TrainerCourseDtos.CourseTrainersViewDto, BusinessAccessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-22 00:11:11.514 +02:00 [INF] Executed action CourseManagementAPI.Controllers.TrainerCourseController.GetCourseToTrainer (CourseManagementAPI) in 1685.4859ms
+2025-03-22 00:11:11.518 +02:00 [INF] Executed endpoint 'CourseManagementAPI.Controllers.TrainerCourseController.GetCourseToTrainer (CourseManagementAPI)'
+2025-03-22 00:11:11.530 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/TrainerCourse/3 - 200 null application/json; charset=utf-8 1821.228ms
+2025-03-22 00:11:18.667 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/TrainerCourse/3 - null null
+2025-03-22 00:11:18.673 +02:00 [INF] Executing endpoint 'CourseManagementAPI.Controllers.TrainerCourseController.GetCourseToTrainer (CourseManagementAPI)'
+2025-03-22 00:11:18.676 +02:00 [INF] Route matched with {action = "GetCourseToTrainer", controller = "TrainerCourse"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCourseToTrainer(Int32) on controller CourseManagementAPI.Controllers.TrainerCourseController (CourseManagementAPI).
+2025-03-22 00:11:18.704 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__trainerId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CourseId], [c].[TrainerId], [c0].[Id], [c0].[CreatedAt], [c0].[Description], [c0].[Price], [c0].[Title], [c0].[UpdatedAt]
+FROM [CourseTrainers] AS [c]
+INNER JOIN [Courses] AS [c0] ON [c].[CourseId] = [c0].[Id]
+WHERE [c].[TrainerId] = @__trainerId_0
+2025-03-22 00:11:18.709 +02:00 [INF] Executing OkObjectResult, writing value of type 'BusinessAccessLayer.DTOS.Response`1[[System.Collections.Generic.IEnumerable`1[[BusinessAccessLayer.DTOS.TrainerCourseDtos.CourseTrainersViewDto, BusinessAccessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-22 00:11:18.711 +02:00 [INF] Executed action CourseManagementAPI.Controllers.TrainerCourseController.GetCourseToTrainer (CourseManagementAPI) in 31.7265ms
+2025-03-22 00:11:18.713 +02:00 [INF] Executed endpoint 'CourseManagementAPI.Controllers.TrainerCourseController.GetCourseToTrainer (CourseManagementAPI)'
+2025-03-22 00:11:18.717 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/TrainerCourse/3 - 200 null application/json; charset=utf-8 50.096ms
+2025-03-22 00:11:27.459 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/TrainerCourse/2 - null null
+2025-03-22 00:11:27.467 +02:00 [INF] Executing endpoint 'CourseManagementAPI.Controllers.TrainerCourseController.GetCourseToTrainer (CourseManagementAPI)'
+2025-03-22 00:11:27.469 +02:00 [INF] Route matched with {action = "GetCourseToTrainer", controller = "TrainerCourse"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCourseToTrainer(Int32) on controller CourseManagementAPI.Controllers.TrainerCourseController (CourseManagementAPI).
+2025-03-22 00:11:27.543 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__trainerId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CourseId], [c].[TrainerId], [c0].[Id], [c0].[CreatedAt], [c0].[Description], [c0].[Price], [c0].[Title], [c0].[UpdatedAt]
+FROM [CourseTrainers] AS [c]
+INNER JOIN [Courses] AS [c0] ON [c].[CourseId] = [c0].[Id]
+WHERE [c].[TrainerId] = @__trainerId_0
+2025-03-22 00:11:27.547 +02:00 [INF] Executing OkObjectResult, writing value of type 'BusinessAccessLayer.DTOS.Response`1[[System.Collections.Generic.IEnumerable`1[[BusinessAccessLayer.DTOS.TrainerCourseDtos.CourseTrainersViewDto, BusinessAccessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-22 00:11:27.550 +02:00 [INF] Executed action CourseManagementAPI.Controllers.TrainerCourseController.GetCourseToTrainer (CourseManagementAPI) in 76.0398ms
+2025-03-22 00:11:27.552 +02:00 [INF] Executed endpoint 'CourseManagementAPI.Controllers.TrainerCourseController.GetCourseToTrainer (CourseManagementAPI)'
+2025-03-22 00:11:27.554 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/TrainerCourse/2 - 200 null application/json; charset=utf-8 95.5785ms
+2025-03-22 00:11:58.322 +02:00 [INF] User profile is available. Using 'C:\Users\AL-FAJR\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-22 00:11:58.933 +02:00 [INF] Now listening on: https://localhost:7245
+2025-03-22 00:11:58.935 +02:00 [INF] Now listening on: http://localhost:5236
+2025-03-22 00:11:58.939 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-22 00:11:58.941 +02:00 [INF] Hosting environment: Development
+2025-03-22 00:11:58.942 +02:00 [INF] Content root path: C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI
+2025-03-22 00:11:59.843 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/index.html - null null
+2025-03-22 00:12:00.162 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/index.html - 200 null text/html;charset=utf-8 326.4067ms
+2025-03-22 00:12:00.213 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-22 00:12:00.222 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_vs/browserLink - null null
+2025-03-22 00:12:00.279 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 32.3127ms
+2025-03-22 00:12:00.326 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_vs/browserLink - 200 null text/javascript; charset=UTF-8 104.092ms
+2025-03-22 00:12:00.872 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - null null
+2025-03-22 00:12:01.050 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 177.6235ms
+2025-03-22 00:12:25.753 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/TrainerCourse/1 - null null
+2025-03-22 00:12:25.834 +02:00 [INF] Executing endpoint 'CourseManagementAPI.Controllers.TrainerCourseController.GetCourseToTrainer (CourseManagementAPI)'
+2025-03-22 00:12:25.863 +02:00 [INF] Route matched with {action = "GetCourseToTrainer", controller = "TrainerCourse"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCourseToTrainer(Int32) on controller CourseManagementAPI.Controllers.TrainerCourseController (CourseManagementAPI).
+2025-03-22 00:12:26.623 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Course'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-03-22 00:12:26.626 +02:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Payment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-03-22 00:12:26.629 +02:00 [WRN] No store type was specified for the decimal property 'RemainingAmount' on entity type 'Payment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-03-22 00:12:27.520 +02:00 [INF] Executed DbCommand (49ms) [Parameters=[@__trainerId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CourseId], [c].[TrainerId], [c0].[Id], [c0].[CreatedAt], [c0].[Description], [c0].[Price], [c0].[Title], [c0].[UpdatedAt]
+FROM [CourseTrainers] AS [c]
+INNER JOIN [Courses] AS [c0] ON [c].[CourseId] = [c0].[Id]
+WHERE [c].[TrainerId] = @__trainerId_0
+2025-03-22 00:12:27.560 +02:00 [INF] Executing OkObjectResult, writing value of type 'BusinessAccessLayer.DTOS.Response`1[[System.Collections.Generic.IEnumerable`1[[BusinessAccessLayer.DTOS.TrainerCourseDtos.CourseTrainersViewDto, BusinessAccessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-22 00:12:27.578 +02:00 [INF] Executed action CourseManagementAPI.Controllers.TrainerCourseController.GetCourseToTrainer (CourseManagementAPI) in 1707.4972ms
+2025-03-22 00:12:27.581 +02:00 [INF] Executed endpoint 'CourseManagementAPI.Controllers.TrainerCourseController.GetCourseToTrainer (CourseManagementAPI)'
+2025-03-22 00:12:27.594 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/TrainerCourse/1 - 200 null application/json; charset=utf-8 1854.9123ms
+2025-03-22 00:12:31.102 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/TrainerCourse/2 - null null
+2025-03-22 00:12:31.109 +02:00 [INF] Executing endpoint 'CourseManagementAPI.Controllers.TrainerCourseController.GetCourseToTrainer (CourseManagementAPI)'
+2025-03-22 00:12:31.111 +02:00 [INF] Route matched with {action = "GetCourseToTrainer", controller = "TrainerCourse"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCourseToTrainer(Int32) on controller CourseManagementAPI.Controllers.TrainerCourseController (CourseManagementAPI).
+2025-03-22 00:12:31.145 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@__trainerId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CourseId], [c].[TrainerId], [c0].[Id], [c0].[CreatedAt], [c0].[Description], [c0].[Price], [c0].[Title], [c0].[UpdatedAt]
+FROM [CourseTrainers] AS [c]
+INNER JOIN [Courses] AS [c0] ON [c].[CourseId] = [c0].[Id]
+WHERE [c].[TrainerId] = @__trainerId_0
+2025-03-22 00:12:31.150 +02:00 [INF] Executing OkObjectResult, writing value of type 'BusinessAccessLayer.DTOS.Response`1[[System.Collections.Generic.IEnumerable`1[[BusinessAccessLayer.DTOS.TrainerCourseDtos.CourseTrainersViewDto, BusinessAccessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-22 00:12:31.152 +02:00 [INF] Executed action CourseManagementAPI.Controllers.TrainerCourseController.GetCourseToTrainer (CourseManagementAPI) in 38.7032ms
+2025-03-22 00:12:31.154 +02:00 [INF] Executed endpoint 'CourseManagementAPI.Controllers.TrainerCourseController.GetCourseToTrainer (CourseManagementAPI)'
+2025-03-22 00:12:31.156 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/TrainerCourse/2 - 200 null application/json; charset=utf-8 54.1464ms
+2025-03-22 00:12:34.360 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/TrainerCourse/3 - null null
+2025-03-22 00:12:34.367 +02:00 [INF] Executing endpoint 'CourseManagementAPI.Controllers.TrainerCourseController.GetCourseToTrainer (CourseManagementAPI)'
+2025-03-22 00:12:34.369 +02:00 [INF] Route matched with {action = "GetCourseToTrainer", controller = "TrainerCourse"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCourseToTrainer(Int32) on controller CourseManagementAPI.Controllers.TrainerCourseController (CourseManagementAPI).
+2025-03-22 00:12:34.435 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__trainerId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CourseId], [c].[TrainerId], [c0].[Id], [c0].[CreatedAt], [c0].[Description], [c0].[Price], [c0].[Title], [c0].[UpdatedAt]
+FROM [CourseTrainers] AS [c]
+INNER JOIN [Courses] AS [c0] ON [c].[CourseId] = [c0].[Id]
+WHERE [c].[TrainerId] = @__trainerId_0
+2025-03-22 00:12:34.450 +02:00 [INF] Executing OkObjectResult, writing value of type 'BusinessAccessLayer.DTOS.Response`1[[System.Collections.Generic.IEnumerable`1[[BusinessAccessLayer.DTOS.TrainerCourseDtos.CourseTrainersViewDto, BusinessAccessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-22 00:12:34.457 +02:00 [INF] Executed action CourseManagementAPI.Controllers.TrainerCourseController.GetCourseToTrainer (CourseManagementAPI) in 85.0901ms
+2025-03-22 00:12:34.460 +02:00 [INF] Executed endpoint 'CourseManagementAPI.Controllers.TrainerCourseController.GetCourseToTrainer (CourseManagementAPI)'
+2025-03-22 00:12:34.463 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/TrainerCourse/3 - 200 null application/json; charset=utf-8 102.8696ms
+2025-03-22 00:13:58.154 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7245/api/Payment - application/json 53
+2025-03-22 00:13:58.163 +02:00 [INF] Executing endpoint 'CourseManagementAPI.Controllers.PaymentController.AddPayment (CourseManagementAPI)'
+2025-03-22 00:13:58.168 +02:00 [INF] Route matched with {action = "AddPayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddPayment(BusinessAccessLayer.DTOS.TrainerCourseDtos.AddCourseToTrainerDto) on controller CourseManagementAPI.Controllers.PaymentController (CourseManagementAPI).
+2025-03-22 00:13:58.219 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Price], [c].[Title], [c].[UpdatedAt]
+FROM [Courses] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-03-22 00:13:58.303 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CreatedAt], [t].[Email], [t].[FullName], [t].[PhoneNumber], [t].[UpdatedAt]
+FROM [Trainers] AS [t]
+WHERE [t].[Id] = @__id_0
+2025-03-22 00:13:58.335 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__TrainerId_0='?' (DbType = Int32), @__CourseId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CourseId], [c].[TrainerId]
+FROM [CourseTrainers] AS [c]
+WHERE [c].[TrainerId] = @__TrainerId_0 AND [c].[CourseId] = @__CourseId_1
+2025-03-22 00:13:58.379 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__TrainerId_0='?' (DbType = Int32), @__CourseId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Amount], [p].[CourseId], [p].[CreatedAt], [p].[PaymentStatusForCourse], [p].[RemainingAmount], [p].[TrainerId], [p].[UpdatedAt]
+FROM [Payments] AS [p]
+WHERE [p].[TrainerId] = @__TrainerId_0 AND [p].[CourseId] = @__CourseId_1
+ORDER BY [p].[CreatedAt] DESC
+2025-03-22 00:13:58.589 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Int32), @p4='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Payments] ([Amount], [CourseId], [CreatedAt], [PaymentStatusForCourse], [RemainingAmount], [TrainerId], [UpdatedAt])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-03-22 00:13:58.620 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-22 00:13:58.625 +02:00 [INF] Executed action CourseManagementAPI.Controllers.PaymentController.AddPayment (CourseManagementAPI) in 453.2126ms
+2025-03-22 00:13:58.627 +02:00 [INF] Executed endpoint 'CourseManagementAPI.Controllers.PaymentController.AddPayment (CourseManagementAPI)'
+2025-03-22 00:13:58.629 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7245/api/Payment - 200 null application/json; charset=utf-8 475.497ms
+2025-03-22 00:14:32.044 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7245/api/Payment - application/json 53
+2025-03-22 00:14:32.053 +02:00 [INF] Executing endpoint 'CourseManagementAPI.Controllers.PaymentController.AddPayment (CourseManagementAPI)'
+2025-03-22 00:14:32.054 +02:00 [INF] Route matched with {action = "AddPayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddPayment(BusinessAccessLayer.DTOS.TrainerCourseDtos.AddCourseToTrainerDto) on controller CourseManagementAPI.Controllers.PaymentController (CourseManagementAPI).
+2025-03-22 00:14:32.063 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Price], [c].[Title], [c].[UpdatedAt]
+FROM [Courses] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-03-22 00:14:32.072 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CreatedAt], [t].[Email], [t].[FullName], [t].[PhoneNumber], [t].[UpdatedAt]
+FROM [Trainers] AS [t]
+WHERE [t].[Id] = @__id_0
+2025-03-22 00:14:32.077 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__TrainerId_0='?' (DbType = Int32), @__CourseId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CourseId], [c].[TrainerId]
+FROM [CourseTrainers] AS [c]
+WHERE [c].[TrainerId] = @__TrainerId_0 AND [c].[CourseId] = @__CourseId_1
+2025-03-22 00:14:32.082 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__TrainerId_0='?' (DbType = Int32), @__CourseId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Amount], [p].[CourseId], [p].[CreatedAt], [p].[PaymentStatusForCourse], [p].[RemainingAmount], [p].[TrainerId], [p].[UpdatedAt]
+FROM [Payments] AS [p]
+WHERE [p].[TrainerId] = @__TrainerId_0 AND [p].[CourseId] = @__CourseId_1
+ORDER BY [p].[CreatedAt] DESC
+2025-03-22 00:14:32.246 +02:00 [INF] Executed action CourseManagementAPI.Controllers.PaymentController.AddPayment (CourseManagementAPI) in 189.7734ms
+2025-03-22 00:14:32.251 +02:00 [INF] Executed endpoint 'CourseManagementAPI.Controllers.PaymentController.AddPayment (CourseManagementAPI)'
+2025-03-22 00:14:32.363 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7245/api/Payment - 404 null application/json 318.7253ms

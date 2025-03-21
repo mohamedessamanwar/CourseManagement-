@@ -1,5 +1,6 @@
 ﻿using BusinessAccessLayer.DTOS.AuthDtos;
 using BusinessAccessLayer.Services.AuthService;
+using BusinessAccessLayer.Services.CacheService;
 using BusinessAccessLayer.Services.CourseService;
 using BusinessAccessLayer.Services.Email;
 using BusinessAccessLayer.Services.PaymentServise;
@@ -22,8 +23,9 @@ namespace BusinessAccessLayer
         {
             services.AddTransient<IMailingService, MailingService>();
             services.Configure<MailSetting>(configuration.GetSection("MailSetting"));
+            services.AddMemoryCache();
             services.Configure<JWT>(configuration.GetSection("JWT"));
-            //services.AddSingleton<ICacheService, CacheService>();
+            services.AddScoped<ICacheService, CacheService>();
             services.AddIdentity<User, IdentityRole>()
                          .AddEntityFrameworkStores<ApplicationDbContext>()
                          .AddDefaultTokenProviders();

@@ -166,3 +166,10 @@ C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\TestProject\o
 C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\TestProject\obj\Debug\net8.0\TestProject.pdb
 C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\TestProject\obj\Debug\net8.0\TestProject.genruntimeconfig.cache
 C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\TestProject\obj\Debug\net8.0\ref\TestProject.dll
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\TestProject\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\TestProject\bin\Debug\net8.0\iTextSharp.LGPLv2.Core.dll
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\TestProject\bin\Debug\net8.0\SkiaSharp.dll
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\TestProject\bin\Debug\net8.0\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\TestProject\bin\Debug\net8.0\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\TestProject\bin\Debug\net8.0\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\TestProject\bin\Debug\net8.0\runtimes\win-x86\native\libSkiaSharp.dll

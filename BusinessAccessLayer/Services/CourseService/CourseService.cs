@@ -84,6 +84,7 @@ namespace BusinessAccessLayer.Services.CourseService
                 UpdatedAt = course.UpdatedAt
             }).ToList();
         }
+
     }
 }
 

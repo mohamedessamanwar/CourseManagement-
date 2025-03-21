@@ -1,6 +1,8 @@
 ﻿using BusinessAccessLayer.DTOS;
 using BusinessAccessLayer.DTOS.CourceDtos;
+using BusinessAccessLayer.Services.CacheService;
 using BusinessAccessLayer.Services.CourseService;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -8,15 +10,18 @@ namespace CourseManagementAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CourseController : ControllerBase
     {
         private readonly ICourseService _courseService;
         private readonly ILogger<CourseController> _logger;
+        private readonly ICacheService cacheService;
 
-        public CourseController(ICourseService courseService, ILogger<CourseController> logger)
+        public CourseController(ICourseService courseService, ILogger<CourseController> logger, ICacheService cacheService)
         {
             _courseService = courseService;
             _logger = logger;
+            this.cacheService = cacheService;
         }
 
         [HttpPost]
@@ -71,14 +76,26 @@ namespace CourseManagementAPI.Controllers
         public async Task<IActionResult> GetCourseById(int id)
         {
             _logger.LogInformation("Fetching course details for ID: {CourseId}", id);
-            var course = await _courseService.GetCourseById(id);
 
+            // Check cache first
+            var cacheKey = $"Course_{id}";
+            var cachedCourse = cacheService.GetCache<ViewCourseDto>(cacheKey);
+            if (cachedCourse != null)
+            {
+                _logger.LogInformation("Course fetched from cache for ID: {CourseId}", id);
+                return Ok(new Response<ViewCourseDto>(cachedCourse));
+            }
+
+            // Fetch from database if not in cache
+            var course = await _courseService.GetCourseById(id);
             if (course == null)
             {
                 _logger.LogWarning("Course not found with ID: {CourseId}", id);
                 return NotFound(new Response<string>("Course not found", false));
             }
 
+            // Store in cache for future requests
+            cacheService.SetCache(cacheKey, course, TimeSpan.FromMinutes(10));
             _logger.LogInformation("Course details fetched successfully for ID: {CourseId}", id);
             return Ok(new Response<ViewCourseDto>(course));
         }
@@ -87,8 +104,26 @@ namespace CourseManagementAPI.Controllers
         public async Task<IActionResult> GetAllCourses()
         {
             _logger.LogInformation("Fetching all courses.");
-            var courses = await _courseService.GetAllCourses();
 
+            // Check cache first
+            var cacheKey = "AllCourses";
+            var cachedCourses = cacheService.GetCache<IEnumerable<ViewCourseDto>>(cacheKey);
+            if (cachedCourses != null)
+            {
+                _logger.LogInformation("Courses fetched from cache.");
+                return Ok(new Response<IEnumerable<ViewCourseDto>>(cachedCourses));
+            }
+
+            // Fetch from database if not in cache
+            var courses = await _courseService.GetAllCourses();
+            if (!courses.Any())
+            {
+                _logger.LogWarning("No courses found.");
+                return NotFound(new Response<string>("No courses found", false));
+            }
+
+            // Store in cache for future requests
+            cacheService.SetCache(cacheKey, courses, TimeSpan.FromMinutes(10));
             _logger.LogInformation("Fetched {Count} courses.", courses.Count());
             return Ok(new Response<IEnumerable<ViewCourseDto>>(courses));
         }

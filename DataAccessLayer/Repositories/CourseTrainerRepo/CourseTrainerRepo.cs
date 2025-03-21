@@ -28,5 +28,24 @@ namespace DataAccessLayer.Repositories.CourseTrainerRepo
         {
             return await applicationDbContext.SaveChangesAsync();
         }
+
+        public async Task<IEnumerable<CourseTrainer>> GetCourseTrainers(int trainerId)
+        {
+            return await applicationDbContext.CourseTrainers.AsNoTracking().
+                Include(e => e.Course).
+                Where(e => e.TrainerId == trainerId).ToListAsync();
+
+        }
+
+        public async Task<IEnumerable<CourseTrainer>> GetCourseTrainersWithPayments()
+        {
+            return await applicationDbContext.CourseTrainers.AsNoTracking().
+                Include(e => e.Course).Include(e => e.Trainer)
+                .Include(e => e.Payments).OrderBy(e => e.Trainer.FullName)
+                 .ToListAsync();
+
+        }
+
+
     }
 }

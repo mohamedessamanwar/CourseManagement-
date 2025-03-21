@@ -1,4 +1,6 @@
-﻿using BusinessAccessLayer.DTOS.TrainerCourseDtos;
+﻿using BusinessAccessLayer.DTOS.PaymentDtos;
+using BusinessAccessLayer.DTOS.TrainerCourseDtos;
+using BusinessAccessLayer.DTOS.TrainerDtos;
 using BusinessAccessLayer.Exceptions;
 using DataAccessLayer.Data.Models;
 using DataAccessLayer.Repositories.CourseRepo;
@@ -27,7 +29,7 @@ namespace BusinessAccessLayer.Services.TrainerCourseService
             {
                 TrainerId = courseTrainerDto.TrainerId,
                 CourseId = courseTrainerDto.CourseId,
-                Payments = new List<Payment>() // Initialize the list before adding items
+                Payments = new List<Payment>()
             };
 
             trainerCourse.Payments.Add(new Payment()
@@ -60,7 +62,6 @@ namespace BusinessAccessLayer.Services.TrainerCourseService
             else
                 return Reamining;
         }
-
         private async Task<Course> ValidateTrainerCourse(AddCourseToTrainerDto courseTrainerDto)
         {
             var course = await courseRepo.GetByIdAsync(courseTrainerDto.CourseId);
@@ -75,8 +76,58 @@ namespace BusinessAccessLayer.Services.TrainerCourseService
                 throw new BadRequstExeption("Trainer Is Aready have Course");
             return course;
         }
+        public async Task<IEnumerable<CourseTrainersViewDto>> GetCourseTrainers(int trainerId)
+        {
+            var CourseTrainers = await courseTrainerRepo.GetCourseTrainers(trainerId);
+            return CourseTrainers.Select(e => new CourseTrainersViewDto()
+            {
+                TrainerId = e.TrainerId,
+                CourseId = e.CourseId,
+                Title = e.Course.Title,
+                Description = e.Course.Description,
+                Price = e.Course.Price,
 
+            }).ToList();
 
+        }
+
+        public async Task<IEnumerable<CourseTrainersWithPaymentsView>> GetCourseTrainersWithPayments()
+        {
+            var result = await courseTrainerRepo.GetCourseTrainersWithPayments();
+            List<CourseTrainersWithPaymentsView>? courseTrainersWithPayments = result.Select(e =>
+            new CourseTrainersWithPaymentsView()
+            {
+                TrainerId = e.TrainerId,
+                CourseId = e.CourseId,
+                Trainer = new TrainerViewDto()
+                {
+                    FullName = e.Trainer.FullName,
+                    Email = e.Trainer.Email,
+                    PhoneNumber = e.Trainer.PhoneNumber,
+
+                },
+                Course = new DTOS.CourceDtos.ViewCourseDto()
+                {
+                    Title = e.Course.Title,
+                    Description = e.Course.Description,
+                    Price = e.Course.Price,
+                },
+                Payments = e.Payments.Select(e => new TrainerPaymentsDto()
+                {
+                    Id = e.Id,
+                    PaymentStatusForCourse = e.PaymentStatusForCourse,
+                    TrainerId = e.TrainerId,
+                    CourseId = e.CourseId,
+                    RemainingAmount = e.RemainingAmount,
+                    Amount = e.Amount,
+                    CreatedAt = e.CreatedAt,
+
+                }).ToList(),
+
+            }).ToList();
+
+            return courseTrainersWithPayments;
+        }
     }
 }
 
