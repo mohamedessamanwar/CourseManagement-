@@ -280,3 +280,108 @@ ORDER BY [p].[CreatedAt] DESC
 2025-03-22 00:14:32.246 +02:00 [INF] Executed action CourseManagementAPI.Controllers.PaymentController.AddPayment (CourseManagementAPI) in 189.7734ms
 2025-03-22 00:14:32.251 +02:00 [INF] Executed endpoint 'CourseManagementAPI.Controllers.PaymentController.AddPayment (CourseManagementAPI)'
 2025-03-22 00:14:32.363 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7245/api/Payment - 404 null application/json 318.7253ms
+2025-03-22 06:32:52.526 +02:00 [INF] User profile is available. Using 'C:\Users\AL-FAJR\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-22 06:32:53.195 +02:00 [INF] Now listening on: https://localhost:7245
+2025-03-22 06:32:53.197 +02:00 [INF] Now listening on: http://localhost:5236
+2025-03-22 06:32:53.203 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-22 06:32:53.205 +02:00 [INF] Hosting environment: Development
+2025-03-22 06:32:53.206 +02:00 [INF] Content root path: C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI
+2025-03-22 06:32:56.150 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/index.html - null null
+2025-03-22 06:32:56.908 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/index.html - 200 null text/html;charset=utf-8 765.6056ms
+2025-03-22 06:32:56.947 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-22 06:32:56.951 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_vs/browserLink - null null
+2025-03-22 06:32:56.968 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 20.3867ms
+2025-03-22 06:32:57.151 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_vs/browserLink - 200 null text/javascript; charset=UTF-8 199.8144ms
+2025-03-22 06:32:57.964 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - null null
+2025-03-22 06:32:58.359 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 396.1476ms
+2025-03-22 06:33:10.131 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/TrainerCourse/export-pdf - null null
+2025-03-22 06:33:10.238 +02:00 [INF] Executing endpoint 'CourseManagementAPI.Controllers.TrainerCourseController.GetCourseTrainersWithPaymentsReportpdf (CourseManagementAPI)'
+2025-03-22 06:33:10.264 +02:00 [INF] Route matched with {action = "GetCourseTrainersWithPaymentsReportpdf", controller = "TrainerCourse"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCourseTrainersWithPaymentsReportpdf() on controller CourseManagementAPI.Controllers.TrainerCourseController (CourseManagementAPI).
+2025-03-22 06:33:11.294 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Course'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-03-22 06:33:11.297 +02:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Payment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-03-22 06:33:11.300 +02:00 [WRN] No store type was specified for the decimal property 'RemainingAmount' on entity type 'Payment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-03-22 06:33:12.471 +02:00 [INF] Executed DbCommand (68ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CourseId], [c].[TrainerId], [c0].[Id], [c0].[CreatedAt], [c0].[Description], [c0].[Price], [c0].[Title], [c0].[UpdatedAt], [t].[Id], [t].[CreatedAt], [t].[Email], [t].[FullName], [t].[PhoneNumber], [t].[UpdatedAt], [p].[Id], [p].[Amount], [p].[CourseId], [p].[CreatedAt], [p].[PaymentStatusForCourse], [p].[RemainingAmount], [p].[TrainerId], [p].[UpdatedAt]
+FROM [CourseTrainers] AS [c]
+INNER JOIN [Trainers] AS [t] ON [c].[TrainerId] = [t].[Id]
+INNER JOIN [Courses] AS [c0] ON [c].[CourseId] = [c0].[Id]
+LEFT JOIN [Payments] AS [p] ON [c].[CourseId] = [p].[CourseId] AND [c].[TrainerId] = [p].[TrainerId]
+ORDER BY [t].[FullName], [c].[CourseId], [c].[TrainerId], [t].[Id], [c0].[Id]
+2025-03-22 06:33:12.768 +02:00 [INF] Executing FileContentResult, sending file with download name 'CourseTrainersWithPaymentsReport.pdf' ...
+2025-03-22 06:33:12.782 +02:00 [INF] Executed action CourseManagementAPI.Controllers.TrainerCourseController.GetCourseTrainersWithPaymentsReportpdf (CourseManagementAPI) in 2507.4685ms
+2025-03-22 06:33:12.786 +02:00 [INF] Executed endpoint 'CourseManagementAPI.Controllers.TrainerCourseController.GetCourseTrainersWithPaymentsReportpdf (CourseManagementAPI)'
+2025-03-22 06:33:12.798 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/TrainerCourse/export-pdf - 200 1774 application/pdf 2667.9089ms
+2025-03-22 06:33:25.655 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7245/api/TrainerCourse/export-pdf - null null
+2025-03-22 06:33:25.662 +02:00 [INF] Executing endpoint 'CourseManagementAPI.Controllers.TrainerCourseController.GetCourseTrainersWithPaymentsReportpdf (CourseManagementAPI)'
+2025-03-22 06:33:25.665 +02:00 [INF] Route matched with {action = "GetCourseTrainersWithPaymentsReportpdf", controller = "TrainerCourse"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCourseTrainersWithPaymentsReportpdf() on controller CourseManagementAPI.Controllers.TrainerCourseController (CourseManagementAPI).
+2025-03-22 06:33:25.699 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CourseId], [c].[TrainerId], [c0].[Id], [c0].[CreatedAt], [c0].[Description], [c0].[Price], [c0].[Title], [c0].[UpdatedAt], [t].[Id], [t].[CreatedAt], [t].[Email], [t].[FullName], [t].[PhoneNumber], [t].[UpdatedAt], [p].[Id], [p].[Amount], [p].[CourseId], [p].[CreatedAt], [p].[PaymentStatusForCourse], [p].[RemainingAmount], [p].[TrainerId], [p].[UpdatedAt]
+FROM [CourseTrainers] AS [c]
+INNER JOIN [Trainers] AS [t] ON [c].[TrainerId] = [t].[Id]
+INNER JOIN [Courses] AS [c0] ON [c].[CourseId] = [c0].[Id]
+LEFT JOIN [Payments] AS [p] ON [c].[CourseId] = [p].[CourseId] AND [c].[TrainerId] = [p].[TrainerId]
+ORDER BY [t].[FullName], [c].[CourseId], [c].[TrainerId], [t].[Id], [c0].[Id]
+2025-03-22 06:33:25.711 +02:00 [INF] Executing FileContentResult, sending file with download name 'CourseTrainersWithPaymentsReport.pdf' ...
+2025-03-22 06:33:25.724 +02:00 [INF] Executed action CourseManagementAPI.Controllers.TrainerCourseController.GetCourseTrainersWithPaymentsReportpdf (CourseManagementAPI) in 55.1006ms
+2025-03-22 06:33:25.729 +02:00 [INF] Executed endpoint 'CourseManagementAPI.Controllers.TrainerCourseController.GetCourseTrainersWithPaymentsReportpdf (CourseManagementAPI)'
+2025-03-22 06:33:25.737 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7245/api/TrainerCourse/export-pdf - 200 1774 application/pdf 81.8402ms
+2025-03-22 06:35:15.243 +02:00 [INF] User profile is available. Using 'C:\Users\AL-FAJR\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-22 06:35:15.667 +02:00 [INF] Now listening on: https://localhost:7245
+2025-03-22 06:35:15.669 +02:00 [INF] Now listening on: http://localhost:5236
+2025-03-22 06:35:15.671 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-22 06:35:15.673 +02:00 [INF] Hosting environment: Development
+2025-03-22 06:35:15.674 +02:00 [INF] Content root path: C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI
+2025-03-22 06:35:16.653 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/index.html - null null
+2025-03-22 06:35:16.994 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/index.html - 200 null text/html;charset=utf-8 353.35ms
+2025-03-22 06:35:17.077 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-22 06:35:17.077 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_vs/browserLink - null null
+2025-03-22 06:35:17.104 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 27.6272ms
+2025-03-22 06:35:17.182 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_vs/browserLink - 200 null text/javascript; charset=UTF-8 105.1031ms
+2025-03-22 06:35:17.809 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - null null
+2025-03-22 06:35:18.018 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 209.3357ms
+2025-03-22 06:35:23.925 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/TrainerCourse/export-pdf - null null
+2025-03-22 06:35:24.038 +02:00 [INF] Executing endpoint 'CourseManagementAPI.Controllers.TrainerCourseController.GetCourseTrainersWithPaymentsReportpdf (CourseManagementAPI)'
+2025-03-22 06:35:24.069 +02:00 [INF] Route matched with {action = "GetCourseTrainersWithPaymentsReportpdf", controller = "TrainerCourse"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCourseTrainersWithPaymentsReportpdf() on controller CourseManagementAPI.Controllers.TrainerCourseController (CourseManagementAPI).
+2025-03-22 06:35:25.066 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Course'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-03-22 06:35:25.070 +02:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Payment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-03-22 06:35:25.073 +02:00 [WRN] No store type was specified for the decimal property 'RemainingAmount' on entity type 'Payment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-03-22 06:35:26.227 +02:00 [INF] Executed DbCommand (67ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CourseId], [c].[TrainerId], [c0].[Id], [c0].[CreatedAt], [c0].[Description], [c0].[Price], [c0].[Title], [c0].[UpdatedAt], [t].[Id], [t].[CreatedAt], [t].[Email], [t].[FullName], [t].[PhoneNumber], [t].[UpdatedAt], [p].[Id], [p].[Amount], [p].[CourseId], [p].[CreatedAt], [p].[PaymentStatusForCourse], [p].[RemainingAmount], [p].[TrainerId], [p].[UpdatedAt]
+FROM [CourseTrainers] AS [c]
+INNER JOIN [Trainers] AS [t] ON [c].[TrainerId] = [t].[Id]
+INNER JOIN [Courses] AS [c0] ON [c].[CourseId] = [c0].[Id]
+LEFT JOIN [Payments] AS [p] ON [c].[CourseId] = [p].[CourseId] AND [c].[TrainerId] = [p].[TrainerId]
+ORDER BY [t].[FullName], [c].[CourseId], [c].[TrainerId], [t].[Id], [c0].[Id]
+2025-03-22 06:35:26.547 +02:00 [INF] Executing FileContentResult, sending file with download name 'CourseTrainersWithPaymentsReport.pdf' ...
+2025-03-22 06:35:26.559 +02:00 [INF] Executed action CourseManagementAPI.Controllers.TrainerCourseController.GetCourseTrainersWithPaymentsReportpdf (CourseManagementAPI) in 2482.3207ms
+2025-03-22 06:35:26.567 +02:00 [INF] Executed endpoint 'CourseManagementAPI.Controllers.TrainerCourseController.GetCourseTrainersWithPaymentsReportpdf (CourseManagementAPI)'
+2025-03-22 06:35:26.585 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/TrainerCourse/export-pdf - 200 1774 application/pdf 2659.7601ms
+2025-03-22 06:38:52.083 +02:00 [INF] User profile is available. Using 'C:\Users\AL-FAJR\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-22 06:38:53.110 +02:00 [INF] Now listening on: https://localhost:7245
+2025-03-22 06:38:53.131 +02:00 [INF] Now listening on: http://localhost:5236
+2025-03-22 06:38:53.143 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-22 06:38:53.155 +02:00 [INF] Hosting environment: Development
+2025-03-22 06:38:53.210 +02:00 [INF] Content root path: C:\Users\AL-FAJR\Desktop\Course Management API\CourseManagementAPI\CourseManagementAPI
+2025-03-22 06:38:54.662 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/index.html - null null
+2025-03-22 06:38:55.199 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/index.html - 200 null text/html;charset=utf-8 546.0612ms
+2025-03-22 06:38:55.281 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-22 06:38:55.282 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_vs/browserLink - null null
+2025-03-22 06:38:55.323 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 42.4175ms
+2025-03-22 06:38:55.498 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_vs/browserLink - 200 null text/javascript; charset=UTF-8 216.0896ms
+2025-03-22 06:38:56.228 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - null null
+2025-03-22 06:38:56.735 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 505.181ms
+2025-03-22 06:39:08.849 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/Trainer - null null
+2025-03-22 06:39:08.945 +02:00 [INF] Executing endpoint 'TrainerController.GetAllTrainers (CourseManagementAPI)'
+2025-03-22 06:39:08.976 +02:00 [INF] Route matched with {action = "GetAllTrainers", controller = "Trainer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTrainers() on controller TrainerController (CourseManagementAPI).
+2025-03-22 06:39:09.174 +02:00 [INF] Fetching all trainers.
+2025-03-22 06:39:09.943 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Course'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-03-22 06:39:09.946 +02:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Payment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-03-22 06:39:09.952 +02:00 [WRN] No store type was specified for the decimal property 'RemainingAmount' on entity type 'Payment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-03-22 06:39:10.955 +02:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[Email], [t].[FullName], [t].[PhoneNumber], [t].[UpdatedAt]
+FROM [Trainers] AS [t]
+2025-03-22 06:39:11.017 +02:00 [INF] Fetched 12 trainers.
+2025-03-22 06:39:11.028 +02:00 [INF] Executing OkObjectResult, writing value of type 'BusinessAccessLayer.DTOS.Response`1[[System.Collections.Generic.IEnumerable`1[[BusinessAccessLayer.DTOS.TrainerDtos.TrainerViewDto, BusinessAccessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-22 06:39:11.065 +02:00 [INF] Executed action TrainerController.GetAllTrainers (CourseManagementAPI) in 2078.4693ms
+2025-03-22 06:39:11.068 +02:00 [INF] Executed endpoint 'TrainerController.GetAllTrainers (CourseManagementAPI)'
+2025-03-22 06:39:11.085 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/Trainer - 200 null application/json; charset=utf-8 2237.2805ms
